@@ -1,0 +1,106 @@
+@media (min-width: 0px) and (max-width: 480px) {
+  .navbar {
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    height: 64px;
+    background-color: var(--primary-red);
+    color: #ffff;
+  }
+
+  .navbar li {
+    list-style-type: none;
+  }
+
+  .logo {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .navButton {
+    background: transparent;
+    border: none;
+    color: #ffff;
+  }
+
+  .navAlign {
+    display: flex;
+    padding: 18px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navButton svg {
+    font-size: 23px;
+  }
+
+  .logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--primary-font-color);
+  }
+
+  .navlinks {
+    position: absolute;
+    top: 63px;
+    left: 0;
+    padding: 24px;
+    width: 100%;
+    flex-direction: column;
+    background: var(--main-bg-color);
+    display: none;
+  }
+
+  .navlinks.open {
+    display: flex;
+  }
+
+  .navlinks a {
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--primary-font-color);
+  }
+
+  .navlinks li {
+    padding-bottom: 30px;
+  }
+
+  .searchBar {
+    position: absolute;
+    z-index: 9999999;
+    top: 0;
+    right: 0;
+    
+  }
+
+  .searchInput {
+    width: 370px;
+    height: 64px;
+    padding: 10px 40px 10px 10px;
+    font-size: 16px;
+    border: 1px solid var(--primary-red);
+  }
+
+  .searchReturn {
+    position: absolute;
+    top: 23px;
+    right: 9px;
+  }
+
+  .searchReturnIcon {
+    color: var(--primary-red);
+    font-size: 20px;
+  }
+
+  .searchItems {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .searchBackwards {
+    background: transparent;
+    border: none;
+    color: #ffff;
+    width: 66px;
+  }
+}
