@@ -2,4 +2,49 @@
     .homepage {
         
     }
+
+    .itaPost {
+        padding: 15px;
+        border-bottom: 1px solid black;
+    }
+
+    .userTimeInfo {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
+    .userTimeInfo p {
+        font-weight: 200;
+    }
+
+    .timeDots {
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .itaHeader {
+        padding-bottom: 10px;
+    }
+
+    .buyMeAcoffee {
+        width: 100vw;
+        height: 64px;
+        padding: 0 100px;
+
+        justify-content: center;
+    }
+
+    .buyMeAcoffee img {
+        height: 200px;
+    }
+
+    .itaInterface {
+        height: calc(100vh - 54px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }

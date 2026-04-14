@@ -8,5 +8,6 @@
 :root {
   --primary-red: #ff6f6f;
   --main-bg-color: #ff6f6f;
-  --primary-font-color: #ffff;
+  --primary-font-white: #ffff;
+  --primary-font-black: #000;
 }

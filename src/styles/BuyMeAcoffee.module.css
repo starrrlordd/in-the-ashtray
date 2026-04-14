@@ -1,0 +1,12 @@
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .buyCoffee h1 {
+    font-family: "Playwrite IE", cursive;
+    font-optical-sizing: auto;
+  }
+
+  .buyCoffee img {
+    height: 50px;
+    width: 53vw;
+    background-color: var(--primary-red);
+  }
+}

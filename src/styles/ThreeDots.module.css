@@ -1,0 +1,16 @@
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .threeDots {
+    display: flex;
+    align-items: center;
+  }
+
+  .threeDots svg {
+    font-size: 5px;
+  }
+
+  .timeDots {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+  }
+}
