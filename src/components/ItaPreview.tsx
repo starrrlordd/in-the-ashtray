@@ -1,35 +1,28 @@
-import { useNavigate } from "react-router-dom";
-import { ITA_POST } from "../data/Ita_post";
+import { NavLink, useNavigate } from "react-router-dom";
 
+import classes from "../styles/ItaPreview.module.css";
 
-import classes from "../styles/Homepage.module.css";
-// import ItaPreview from "./ItaPreview";
-
-
-import BuyMeAcoffee from "./UI/BuyMeAcoffee";
 import ThreeDots from "./UI/ThreeDots";
 
 interface Post {
-  id: string;
-  userId: string;
+  id: number;
   createdAt: string;
+  userId: string;
   header: string;
   previewContent: string;
   fullContent: string[];
-};
+}
 
-const itaPost: Post[] = ITA_POST;
+interface ItaPreviewProps {
+  posts: Post[];
+}
 
-const Homepage = () => {
+const ItaPreview: React.FC<ItaPreviewProps> = ({ posts }) => {
   const navigate = useNavigate();
 
-  const postClickHandler = (post: Post) => {
-    navigate(`/post/${post.id}`)
-  }
-
   return (
-    <>
-      {itaPost.map((post) => (
+    <div className={classes.itaInterface}>
+      {posts.map((post) => (
         <div key={post.id} className={classes.itaPost}>
           <div className={classes.userTimeInfo}>
             <p className={classes.userId}>{post.userId}</p>
@@ -39,22 +32,24 @@ const Homepage = () => {
             </div>
           </div>
 
-          <div onClick={() => postClickHandler(post) }>
+          <div
+            onClick={() => navigate(`/post/${post.id}`)}
+            className={classes.itaPostClick}
+          >
             <div className={classes.itaHeader}>
               <h1>{post.header}</h1>
             </div>
             <div className={classes.itaContent}>
+              {/* {post.fullContent.map((para, index) => (
+              <p key={index}>{para}</p>
+            ))} */}
               <p>{post.previewContent}</p>
             </div>
           </div>
         </div>
       ))}
-
-      <div className={classes.buyMeAcoffee}>
-        <BuyMeAcoffee />
-      </div>
-    </>
+    </div>
   );
 };
 
-export default Homepage;
+export default ItaPreview;

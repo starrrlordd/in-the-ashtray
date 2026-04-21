@@ -4,12 +4,6 @@
     border-bottom: 1px solid black;
   }
 
-  .itaPostA {
-    text-decoration: none;
-    color: var(--primary-font-black);
-    font-weight: 300;
-  }
-
   .userTimeInfo {
     display: flex;
     justify-content: space-between;
@@ -31,10 +25,9 @@
     padding-bottom: 10px;
   }
 
-  .itaContent p {
-    margin-bottom: 1.2rem;
-    line-height: 1.6;
-    font-weight: 300;
+  .itaPostClick {
+    text-decoration: none;
+    color: var(--primary-font-black);
   }
 
   .itaInterface {
@@ -43,15 +36,9 @@
     justify-content: space-between;
   }
 
-  .buyMeAcoffee {
-    width: 100vw;
-    height: 64px;
-    padding: 0 100px;
-
-    justify-content: center;
-  }
-
-  .buyMeAcoffee img {
-    height: 200px;
+  .itaContent p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+    font-weight: 300;
   }
 }

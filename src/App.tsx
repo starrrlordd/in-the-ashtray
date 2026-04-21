@@ -1,16 +1,18 @@
-import { Routes, Route } from "react-router-dom";
-
-import Homepage from "./components/Homepage";
-
-import Arts from "./pages/Arts";
+import AppRoutes from "./AppRoutes";
+import Navbar from "./components/layouts/Navbar";
 
 function App() {
+  const links = [
+    { label: "Arts", path: "/arts" },
+    { label: "Writing", path: "/writing" },
+    { label: "Contact me", path: "/contact-me" },
+  ];
+
   return (
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/arts" element={<Arts />} />
-      </Routes>
-    
+    <div>
+      <Navbar links={links} />
+      <AppRoutes />
+    </div>
   );
 }
 
